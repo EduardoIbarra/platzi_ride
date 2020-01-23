@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ride</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-card color="light" *ngIf="ride">
+    <img src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>{{ride.start}}</ion-card-subtitle>
+      <ion-card-title>{{ride.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item routerLink="/ride-form/{{ride.id}}">
+        <ion-icon name="create" slot="start"></ion-icon>
+        <ion-label>Editar</ion-label>
+      </ion-item>
+      <ion-item (click)="delete(ride.id)" color="danger">
+        <ion-icon name="trash" slot="start"></ion-icon>
+        <ion-label>Eliminar</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

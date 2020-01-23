@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b769aba-f2d7-4156-9a22-8325f98ea296" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/backend/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/collection-11--2771880973093241284.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/collection-11--2771880973093241284.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/mongo_data/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/_mdb_catalog.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/mongo_data/collection-11--2771880973093241284.wt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.2020-01-22T16-14-58Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.2020-01-22T16-14-58Z-00000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/index-12--2771880973093241284.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/index-12--2771880973093241284.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/mongo_data/index-12--2771880973093241284.wt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/journal/WiredTigerLog.0000000001" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/journal/WiredTigerLog.0000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/sizeStorer.wt" afterDir="false" />
     </list>
@@ -23,88 +25,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts">
+        <entry file="file://$PROJECT_DIR$/backend/api/models/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/services/ride.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/models/Ride.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/rides/rides.page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="255">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/rides/rides.page.ts">
+        <entry file="file://$PROJECT_DIR$/backend/api/controllers/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="343">
+              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
+        <entry file="file://$PROJECT_DIR$/backend/config/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -124,12 +66,16 @@
         <option value="$PROJECT_DIR$/frontend/src/models/ride.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/models/Ride.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/rides/rides.page.html" />
         <option value="$PROJECT_DIR$/frontend/src/services/ride.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/rides/rides.page.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/rides/rides.page.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ride/ride.page.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ride/ride.page.html" />
+        <option value="$PROJECT_DIR$/backend/config/routes.js" />
+        <option value="$PROJECT_DIR$/backend/api/controllers/UserController.js" />
       </list>
     </option>
   </component>
@@ -162,55 +108,27 @@
               <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ride-form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="rides" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PlatziRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlatziRide" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -253,12 +171,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579706176327</updated>
       <workItem from="1579706178524" duration="7536000" />
-      <workItem from="1579789325505" duration="3610000" />
+      <workItem from="1579789325505" duration="5097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11146000" />
+    <option name="totallyTimeSpent" value="12633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1280" height="697" extended-state="6" />
@@ -334,44 +252,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/models/Ride.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="32" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/rides/rides.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -387,11 +271,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/rides/rides.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="375">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="6" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/rides/rides.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="32" column="5" selection-start-line="22" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ride/ride.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ride-form/ride-form.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ride/ride.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/controllers/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
         </state>
       </provider>
     </entry>
