@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b769aba-f2d7-4156-9a22-8325f98ea296" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/_mdb_catalog.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/_mdb_catalog.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/collection-11--2771880973093241284.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/controllers/UserController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.2020-01-22T16-14-58Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.2020-01-22T16-14-58Z-00000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/index-12--2771880973093241284.wt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/mongo_data/journal/WiredTigerLog.0000000001" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/journal/WiredTigerLog.0000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mongo_data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mongo_data/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/api/controllers/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="480">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -171,12 +167,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579706176327</updated>
       <workItem from="1579706178524" duration="7536000" />
-      <workItem from="1579789325505" duration="5097000" />
+      <workItem from="1579789325505" duration="5840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12633000" />
+    <option name="totallyTimeSpent" value="13376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1280" height="697" extended-state="6" />
@@ -346,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/api/controllers/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        <state relative-caret-position="480">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
