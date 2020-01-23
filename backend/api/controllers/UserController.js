@@ -1,4 +1,6 @@
+const bcrypt = require('bcrypt');
 const joi = require('joi');
+const saltRound = 10;
 /**
  * UserController
  *
@@ -18,8 +20,13 @@ module.exports = {
         email: joi.string().required().email(),
         password: joi.string().required(),
       });
-      const params = await joi.validate(req.allParams(), schema);
-      return res.ok(params);
+      const {email, password} = await joi.validate(req.allParams(), schema);
+      const hashedPassword = await bcrypt.hash(password, saltRound);
+      const user = await User.create({
+        email,
+        password: hashedPassword
+      }).fetch();
+      return res.ok(user);
     } catch (err) {
       if (err.name === 'ValidationError') {
         return res.badRequest({err}).json();
