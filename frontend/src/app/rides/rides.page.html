@@ -7,7 +7,7 @@
     </ion-buttons>
     <ion-title>Rodadas</ion-title>
     <ion-buttons slot="end">
-      <ion-button routerLink="">
+      <ion-button routerLink="/ride-form/new">
         <ion-icon slot="icon-only" name="add"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -22,6 +22,14 @@
       <ion-card-title>{{ride.title}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <ion-item routerLink="/ride-form/{{ride.id}}">
+        <ion-icon name="create" slot="start"></ion-icon>
+        <ion-label>Editar</ion-label>
+      </ion-item>
+      <ion-item (click)="delete(ride.id)" color="danger">
+        <ion-icon name="trash" slot="start"></ion-icon>
+        <ion-label>Eliminar</ion-label>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 </ion-content>
