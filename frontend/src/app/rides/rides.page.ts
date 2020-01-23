@@ -15,6 +15,10 @@ export class RidesPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.getRides();
+  }
+
+  getRides() {
     this.rides = this.rideService.getAll();
   }
 
