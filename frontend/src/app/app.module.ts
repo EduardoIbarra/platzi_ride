@@ -8,8 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {RideService} from '../services/ride';
+import {AuthenticationService} from '../services/authentication';
+import {TokenInterceptorService} from '../services/tokenInterceptor';
 
 @NgModule({
     declarations: [AppComponent],
@@ -24,7 +26,9 @@ import {RideService} from '../services/ride';
         StatusBar,
         SplashScreen,
         { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-        RideService
+        RideService,
+        AuthenticationService,
+        {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true},
     ],
     bootstrap: [AppComponent]
 })
