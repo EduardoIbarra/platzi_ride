@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import {NavController} from '@ionic/angular';
 import {RideService} from '../../services/ride';
 import {DEFAULT_RIDE_OBJECT, Ride} from '../../models/Ride';
+import {WeatherService} from '../../services/weather';
 
 declare const google: any;
 
@@ -21,7 +22,8 @@ export class RideFormPage implements OnInit {
   constructor(
       private activatedRoute: ActivatedRoute,
       private navCtrl: NavController,
-      private rideService: RideService
+      private rideService: RideService,
+      private weatherService: WeatherService,
   ) { }
 
   ngOnInit() {
@@ -43,6 +45,7 @@ export class RideFormPage implements OnInit {
       this.masterWayPoint = '';
       this.ride.wayPoints = this.wayPoints;
       console.log(this.ride);
+      this.getDistances();
   }
 
   save() {
@@ -69,7 +72,7 @@ export class RideFormPage implements OnInit {
 
   public getDistances() {
       let thisWayPoints = this.wayPoints.slice(1, -1);
-      thisWayPoints = this.wayPoints.map((wp) => ({location: wp, stopover: true}));
+      thisWayPoints = thisWayPoints.map((wp) => ({location: wp, stopover: true}));
       if (this.wayPoints.length < 2) {
           return;
       }
@@ -77,7 +80,7 @@ export class RideFormPage implements OnInit {
 
       const request = {
           origin: this.wayPoints[0],
-          wayPoints: thisWayPoints,
+          waypoints: thisWayPoints,
           destination: this.wayPoints[this.wayPoints.length - 1],
           travelMode: 'DRIVING',
           drivingOptions: {
@@ -91,19 +94,29 @@ export class RideFormPage implements OnInit {
           this.legs = result.routes[0].legs;
           this.ride.wayPoints = [];
           this.legs.forEach((leg) => {
-              this.ride.wayPoints.push({
-                  start_address: leg.start_address,
-                  start_location: {
-                      lat: leg.start_location.lat(),
-                      lng: leg.start_location.lng(),
-                  },
-                  end_address: leg.end_address,
-                  end_location: {
-                      lat: leg.end_location.lat(),
-                      lng: leg.end_location.lng(),
-                  },
-                  distance: leg.distance,
-                  duration: leg.duration,
+              const start_location = {
+                  lat: leg.start_location.lat(),
+                  lng: leg.start_location.lng(),
+              };
+              const end_location = {
+                  lat: leg.end_location.lat(),
+                  lng: leg.end_location.lng(),
+              };
+
+              this.weatherService.getWeather(start_location).subscribe((data: any) => {
+                  console.log(data.main);
+                  this.ride.wayPoints.push({
+                      start_address: leg.start_address,
+                      start_location: start_location,
+                      end_address: leg.end_address,
+                      end_location: end_location,
+                      distance: leg.distance,
+                      duration: leg.duration,
+                      weather: data.main,
+                  });
+              }, (error) => {
+                 alert('Ocurrió un error obteniendo el clima');
+                 console.log(error);
               });
           });
           console.log(this.ride);
