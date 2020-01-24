@@ -17,7 +17,7 @@ module.exports = {
           wayPoints: params.wayPoints,
           user: req.user,
         }
-      );
+      ).fetch();
       return res.ok(ride);
     } catch (err) {
       return res.serverError({err});

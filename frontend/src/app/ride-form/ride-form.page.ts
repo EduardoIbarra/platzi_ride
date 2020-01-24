@@ -13,6 +13,8 @@ export class RideFormPage implements OnInit {
   id: string;
   editing = false;
   ride: Ride = DEFAULT_RIDE_OBJECT;
+  wayPoints = [];
+  masterWayPoint: string;
   constructor(
       private activatedRoute: ActivatedRoute,
       private navCtrl: NavController,
@@ -31,6 +33,13 @@ export class RideFormPage implements OnInit {
             console.log(error);
         })
     }
+  }
+
+  addWayPoint() {
+      this.wayPoints.push(this.masterWayPoint);
+      this.masterWayPoint = '';
+      this.ride.wayPoints = this.wayPoints;
+      console.log(this.ride);
   }
 
   save() {
