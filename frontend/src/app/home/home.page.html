@@ -19,12 +19,18 @@
       <ion-label>Contraseña</ion-label>
       <ion-input [(ngModel)]="credential.password" type="password"></ion-input>
     </ion-item>
-    <ion-item color="dark">
+    <ion-item color="dark" *ngIf="!isLoggingIn">
       <ion-label>Confirmar Contraseña</ion-label>
       <ion-input [(ngModel)]="credential.passwordConfirm" type="password"></ion-input>
     </ion-item>
   </ion-list>
   <div class="ion-padding">
+    <p *ngIf="!isLoggingIn">
+      Ya tienes cuenta? <a (click)="toggleLogin()">CLICK AQUÍ!</a>
+    </p>
+    <p *ngIf="isLoggingIn">
+      Aún no tienes cuenta? <a (click)="toggleLogin()">CLICK AQUÍ!</a>
+    </p>
     <ion-button (click)="login()" class="ion-activable" expand="block">
       Ingresar
     </ion-button>

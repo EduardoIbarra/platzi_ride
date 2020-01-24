@@ -9,15 +9,36 @@ import {NavController} from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  isLoggingIn = true;
   credential: Credential = DEFAULT_CREDENTIAL_OBJECT;
   constructor(
       private authenticationService: AuthenticationService,
       private navCtrl: NavController
   ) {}
 
+  public toggleLogin = () => {
+    this.isLoggingIn = !this.isLoggingIn;
+  };
+
   login() {
-    // Hacer el login o el signup
-    this.doLogin();
+    if (this.isLoggingIn) {
+      this.doLogin();
+    } else {
+      if (this.credential.password !== this.credential.passwordConfirm) {
+        alert('Tus contraseñas no coincidieron');
+        return;
+      }
+      this.authenticationService.signup({
+        email: this.credential.email,
+        password: this.credential.password
+      }).subscribe((data: any) => {
+        console.log(data);
+        this.doLogin();
+      }, (error) => {
+        alert('No pudimos autenticarte!');
+        console.log(error);
+      })
+    }
   }
   doLogin() {
     this.authenticationService.login({
