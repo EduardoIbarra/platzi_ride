@@ -4,6 +4,8 @@ import {NavController} from '@ionic/angular';
 import {RideService} from '../../services/ride';
 import {DEFAULT_RIDE_OBJECT, Ride} from '../../models/Ride';
 
+declare const google: any;
+
 @Component({
   selector: 'app-ride-form',
   templateUrl: './ride-form.page.html',
@@ -15,6 +17,7 @@ export class RideFormPage implements OnInit {
   ride: Ride = DEFAULT_RIDE_OBJECT;
   wayPoints = [];
   masterWayPoint: string;
+  legs = [];
   constructor(
       private activatedRoute: ActivatedRoute,
       private navCtrl: NavController,
@@ -62,6 +65,49 @@ export class RideFormPage implements OnInit {
           console.log(error);
       })
     }
+  }
+
+  public getDistances() {
+      let thisWayPoints = this.wayPoints.slice(1, -1);
+      thisWayPoints = this.wayPoints.map((wp) => ({location: wp, stopover: true}));
+      if (this.wayPoints.length < 2) {
+          return;
+      }
+      const directionsService = new google.maps.DirectionsService();
+
+      const request = {
+          origin: this.wayPoints[0],
+          wayPoints: thisWayPoints,
+          destination: this.wayPoints[this.wayPoints.length - 1],
+          travelMode: 'DRIVING',
+          drivingOptions: {
+              departureTime: new Date(this.ride.start),
+              trafficModel: 'bestguess',
+          },
+          unitSystem: google.maps.UnitSystem.METRIC
+      };
+
+      directionsService.route(request, (result, status) => {
+          this.legs = result.routes[0].legs;
+          this.ride.wayPoints = [];
+          this.legs.forEach((leg) => {
+              this.ride.wayPoints.push({
+                  start_address: leg.start_address,
+                  start_location: {
+                      lat: leg.start_location.lat(),
+                      lng: leg.start_location.lng(),
+                  },
+                  end_address: leg.end_address,
+                  end_location: {
+                      lat: leg.end_location.lat(),
+                      lng: leg.end_location.lng(),
+                  },
+                  distance: leg.distance,
+                  duration: leg.duration,
+              });
+          });
+          console.log(this.ride);
+      });
   }
 
 }
